@@ -1,7 +1,12 @@
 aid: buffd
 name: Buffd
-description: Buffd is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Buffd is a gaming and esports consumer application, delivered as an installable
+  Progressive Web App (PWA) at buffd.gg, surfaced as a portfolio company of 500 Global and
+  added to the API Evangelist network. The company was linked in the venture-portfolio source
+  to the now-defunct juked.gg esports property; buffd.gg is the live product surface. As of this
+  enrichment pass, Buffd publishes no public developer program, API, OpenAPI, SDK, or documentation
+  surface, so this profile carries identity and domain-security signals only, awaiting a developer
+  surface to enrich further.
 url: https://raw.githubusercontent.com/api-evangelist/buffd/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +14,28 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Gaming
+- Esports
+- Consumer
+- Progressive Web App
+- Mobile
+image: https://www.buffd.gg/pwa/chrome-icon/chrome-icon-512.png
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +43,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/buffd-domain-security.yml
 - type: Website
-  url: https://juked.gg
+  url: https://www.buffd.gg
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
